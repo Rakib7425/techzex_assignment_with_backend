@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* main div */
+.mainDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #08d684;
+}
+/* left */
+.left {
+	min-width: 450px;
+	min-height: 520px;
+	padding: 15px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	border-radius: 10px;
+	background: #59e992;
+	color: white;
+	font-size: 1.3rem;
+}
+.leftUpper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 20px;
+}
+.leftUpper h3 {
+	margin-left: -45px;
+}
+.leftMiddle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.3rem;
+}
+.unOrderedList {
+	width: max-content;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+.leftLower {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* right */
+section {
+	min-width: 450px;
+	min-height: 520px;
+	padding: 15px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	border-radius: 10px;
+	background: #224853;
+}
+
+#logo {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin: 30px;
+}
+
+nav {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+nav label {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+nav label:first-child {
+	margin-right: 20px;
+}
+
+form {
+	padding-inline: 60px;
+	display: none;
+	flex-direction: column;
+}
+
+#SignIn:checked ~ section #SignInFormData {
+	display: flex;
+}
+
+#SignIn:checked ~ section nav label:first-child {
+	margin-bottom: -2px;
+	border-bottom: 2px solid #1ed760;
+}
+
+#SignUp:checked ~ section #SignUpFormData {
+	display: flex;
+}
+
+#SignUp:checked ~ section nav label:last-child {
+	margin-bottom: -2px;
+	border-bottom: 2px solid #1ed760;
+}
+
+input,
+button {
+	border-radius: 50px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+	background: #1ed760;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+form span {
+	margin-left: 20px;
+}
+
+form span label {
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	accent-color: #3498db;
+}
+
+a {
+	color: #797a7e;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}

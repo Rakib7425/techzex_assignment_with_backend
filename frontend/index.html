@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/error-page-logo.24aca703.svg"
+    type="image/x-icon" />
+  <link href="
+        https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css
+        " rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>spotify - signup</title>
+</head>
+
+<body>
+  <main class="mainDiv">
+    <div class="left">
+      <div class="leftUpper">
+        <h2>Music for everyone</h2>
+        <p>Premium Subscription</p>
+        <h3>$9.99 <span>/month</span></h3>
+      </div>
+      <div class="leftMiddle">
+        <ul class="unOrderedList">
+          <li>Shuffle play</li>
+          <li>Ad Free</li>
+          <li>Unlimited Skips</li>
+          <li>Listen Offline</li>
+          <li>Play any track</li>
+          <li>High quality audio</li>
+        </ul>
+      </div>
+      <div class="leftLower">
+        <p>Start Your 30 day free trial*</p>
+        Family and Student offers available
+      </div>
+    </div>
+    <div class="right">
+      <input type="radio" name="optionScreen" id="SignIn" hidden checked />
+      <input type="radio" name="optionScreen" id="SignUp" hidden />
+
+      <section>
+        <div id="logo">
+          <img src="https://open.spotifycdn.com/cdn/images/error-page-logo.24aca703.svg" alt="Spotify-Logo"
+            width="50" />
+          <h1 style="margin-left: 10px;">Spotify</h1>
+        </div>
+
+        <nav>
+          <label for="SignIn">User List</label>
+          <label for="SignUp">Sign Up</label>
+        </nav>
+
+        <form id="SignInFormData">
+          <a href="./pages/user.html" target="_blank"
+            style="color:red; font-size: 30px; text-decoration: underline;">Users</a>
+          <!-- <input type="email" id="inEmail" placeholder="Email" />
+            <input type="password" id="inPassword" placeholder="Password" />
+            <span>
+              <input type="checkbox" id="staySingedIn" checked />
+              <label for="staySingedIn">stay Signed In</label>
+            </span>
+            <button type="button" title="Sing In">Sing In</button>
+
+            <a id="forgotPassword">forgot Password?</a> -->
+        </form>
+
+        <form id="SignUpFormData">
+          <input type="text" id="upName" placeholder="Enter Your Name" />
+          <input type="email" id="upEmail" placeholder="E-mail" />
+          <input type="password" id="upPassword" placeholder="New Password" />
+          <span>
+            <input type="checkbox" id="staySingedUp" />
+            <label for="staySingedUp">stay Signed In</label>
+          </span>
+          <button type="button" id="signupBtn" title="Sing Up">
+            Sing Up
+          </button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
