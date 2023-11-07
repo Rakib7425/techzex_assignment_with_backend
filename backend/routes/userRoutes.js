@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../models/userModel");
 const userControllers = require("../controllers/userControllers");
 
 router.post("/register", async (req, res) => {
@@ -34,4 +33,5 @@ router.get("/user/:userId", async (req, res) => {
 		});
 	}
 });
+
 module.exports = router;
