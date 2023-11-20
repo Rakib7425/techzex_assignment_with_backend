@@ -20,7 +20,7 @@ const registerUser = async (req, res) => {
 		}
 	} catch (error) {
 		console.error(error);
-		res.status(400).json({ message: "Bad request", duplicateUser: error.keyValue });
+		res.status(400).json({ message: "Bad request", duplicate_user: error.keyValue });
 	}
 };
 
